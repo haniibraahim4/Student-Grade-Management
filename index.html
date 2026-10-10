@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+
+     <style>
+  button {
+            
+       
+            border: none;
+            border-radius: 5px;
+           
+        }
+
+        button[type="submit"] {
+            background-color: green;
+
+        
+            color: white;
+        }
+
+        button[type="reset"] {
+            background-color: red;
+            color: white;
+        }
+
+
+
+     </style>
+</head>
+<body>
+    <h1> Student Grade Management and File Upload System</h1>
+    <form action="process.php" method="POST"
+          enctype="multipart/form-data">
+
+        <label class="lebels">Student Full Name:</label>
+        <input type="text" name="student_name">
+        <br><br>
+
+        <label>Student ID:</label>
+        <input type="text" name="student_id">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        <label>Faculty:</label>
+        <select name="faculty">
+            <option value="">Select Faculty</option>
+            <option value="IT">Information Technology</option>
+            <option value="Business">Business</option>
+            <option value="Engineering">Engineering</option>
+        </select>
+        <br><br>
+
+        <label>PHP Mark:</label>
+        <input type="number" name="php_mark" min="0" max="100">
+        <br><br>
+
+        <label>Database Mark:</label>
+        <input type="number" name="database_mark" min="0" max="100">
+        <br><br>
+
+        <label>Networking Mark:</label>
+        <input type="number" name="networking_mark" min="0" max="100">
+        <br><br>
+
+        <label>Student Certificate:</label>
+        <input type="file" name="certificate">
+        <br><br>
+
+        <button type="submit">Submit and Calculate</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
